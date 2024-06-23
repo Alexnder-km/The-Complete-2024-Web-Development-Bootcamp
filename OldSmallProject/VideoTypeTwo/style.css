@@ -52,8 +52,7 @@ body {
     font-family: horror;
     background-image: url("./img/Background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
     padding-top: 5em;
 }
 
@@ -63,8 +62,6 @@ body {
 }
 
 iframe {
-    height:450px;
-     width:50%;
-     margin-top: 10px;
-     
+    width:400px;
+     height:250px;
 }
