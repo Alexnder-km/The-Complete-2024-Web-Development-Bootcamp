@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Movies Trailer</h1>
+    </header>
+
+
+
+    <article>
+        <table style="width:50%" class="center">
+            <tbody>
+                <tr>
+                    <td onclick="myFunction('myDIV')">
+                        <h3>Megan</h3>
+                    </td>
+                </tr>
+                <tr id="myDIV">
+                    <td><img src="./img/meg.jpg" alt="pic meg"></td>
+                    <td><iframe width="400" height="250" src="https://www.youtube.com/embed/OoDHM_A1axc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></td>
+                    <td>
+                        <h5>About:</h5>
+                        <p>M3GAN is a marvel of artificial intelligence, a lifelike doll that's programmed to be a
+                            child's
+                            greatest companion and a parent's greatest ally.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="myFunction('myDIV2')">
+                        <h3>Barbarian</h3>
+                    </td>
+                </tr>
+                <tr id="myDIV2">
+
+                    <td><img src="./img/barb.jpg" alt="pic barb"></td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Dr89pmKrqkI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></td>
+                    <td>
+                        <h5>About:</h5>
+                        <p>A young woman discovers the rental home she booked is already occupied by a stranger. Against
+                            her
+                            better judgment, she decides to spend the night but soon discovers there's a lot more to
+                            fear
+                            than
+                            just an unexpected house guest.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="myFunction('myDIV3')">
+                        <h3>Smiile</h3>
+                    </td>
+                </tr>
+                <tr id="myDIV3">
+                    <td><img src="./img/smile.jpg" alt="pic smile"></td>
+                    <td><iframe src="https://www.youtube.com/embed/BcDK7lkzzsU" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></td>
+                    <td>
+                        <h5>About:</h5>
+                        <p>After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts
+                            experiencing frightening occurrences that she can't explain. As an overwhelming terror
+                            begins
+                            taking
+                            over her life, Rose must confront her troubling past in order to survive and escape her
+                            horrifying
+                            new reality.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="myFunction('myDIV4')">
+                        <h3>The Black Phone</h3>
+                    </td>
+                </tr>
+                <tr id="myDIV4">
+                    <td><img src="./img/theblack.jpg" alt="pic theblack"></td>
+                    <td><iframe src="https://www.youtube.com/embed/3eGP6im8AZA" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></td>
+                    <td>
+                        <h5>About:</h5>
+                        <p>Finney Shaw is a shy but clever 13-year-old boy who's being held in a soundproof basement by
+                            a
+                            sadistic, masked killer. When a disconnected phone on the wall starts to ring, he soon
+                            discovers
+                            that he can hear the voices of the murderer's previous victims -- and they are dead set on
+                            making
+                            sure that what happened to them doesn't happen to Finney.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td onclick="myFunction('myDIV5')">
+                        <h3>Resident Evil: Welcome to Raccoon City</h3>
+                    </td>
+                </tr>
+
+                <tr id="myDIV5">
+                    <td><img src="./img/resievil.jpg" alt="pic resievil"></td>
+                    <td> <iframe src="https://www.youtube.com/embed/4q6UGCyHZCI" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></td>
+                    <td>
+                        <h5>About:</h5>
+                        <p>Claire and her brother Chris get caught in a zombie outbreak in the dying Raccoon City. They
+                            must
+                            band together with others to survive and uncover the truth about the experiments held in the
+                            city.
+                        </p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </article>
+
+
+
+
+    <script >
+
+        function myFunction(name) {
+            var name2 = document.getElementById(name)
+            // name2.style.display = "block"; checking if it respone
+            // alert(name2); checking info it gets
+            if (name2.style.display === "none") {
+                name2.style.display = "block";
+                if (name2 !== myDIV)
+                    myDIV.style.display = "none";
+                if (name2 !== myDIV2)
+                    myDIV2.style.display = "none";
+                if (name2 !== myDIV3)
+                    myDIV3.style.display = "none";
+                if (name2 !== myDIV4)
+                    myDIV4.style.display = "none";
+                if (name2 !== myDIV5)
+                    myDIV5.style.display = "none";
+            } else {
+                name2.style.display = "none";
+            }
+        }
+
+//======== Good Old way========//
+
+        // var myDIV = document.getElementById("myDIV");
+        // var myDIV2 = document.getElementById("myDIV2");
+        // var myDIV3 = document.getElementById("myDIV3");
+        // var myDIV4 = document.getElementById("myDIV4");
+        // var myDIV5 = document.getElementById("myDIV5");
+
+        // function myFunction() {
+            // if (myDIV.style.display === "none") {
+        //         myDIV.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction2() {
+        //     if (myDIV2.style.display === "none") {
+        //         myDIV2.style.display = "block";
+        //         // turn off all others
+        //         myDIV.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV2.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction3() {
+        //     if (myDIV3.style.display === "none") {
+        //         myDIV3.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV3.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction4() {
+        //     if (myDIV4.style.display === "none") {
+        //         myDIV4.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV.style.display = "none";
+        //         myDIV5.style.display = "none";
+        //     } else {
+        //         myDIV4.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction5() {
+
+        //     if (myDIV5.style.display === "none") {
+        //         myDIV5.style.display = "block";
+        //         // turn off all others
+        //         myDIV2.style.display = "none";
+        //         myDIV3.style.display = "none";
+        //         myDIV4.style.display = "none";
+        //         myDIV.style.display = "none";
+        //     } else {
+        //         myDIV5.style.display = "none";
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: horror;
+    src: url(./font/Nosifer-Regular.ttf);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+img {
+    height: 240px;
+    border-radius: 2px;
+}
+
+body {
+    text-align: center;
+    font-family: horror;
+    background-image: url("./img/Background.jpg");
+    background-repeat: no-repeat;
+     height: 100%; 
+}
+
+p {
+    font-size: 10px;
+    color: grey;
+}
+
+h1,
+h3,
+h5,
+p {
+
+    background: linear-gradient(to right, #f32170,
+            #bcb9b6, #cf2323, #c5babe);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
