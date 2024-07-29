@@ -19,3 +19,37 @@ footer {
   color: midnightblue;
 }
 
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.tile-image{
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+
+.gird-coontrainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 200px 200px;
+  gap:30px;
+}
+
+.card{
+grid-column: span 1;
+}
+
+footer{
+  clear: both;
+}
+
+h1{
+  grid-column: span 2;
+  clear: both;
+}
