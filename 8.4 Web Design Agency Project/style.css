@@ -81,18 +81,18 @@ footer {
   .gird-coontrainer {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows:  50% 100%;
-    gap: 30px;
+    grid-template-rows:  45% 45%;
+    gap: 20px;
     overflow: auto;
   }
 
   .tile-image{
     width: 100%;
     clear: both;
+    padding: 10px;
+    margin:0px;
   }
 
-  .card{
-    clear: both;
-  }
+  
 }
 
