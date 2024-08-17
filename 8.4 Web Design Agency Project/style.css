@@ -6,50 +6,94 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
-.main {
-  flex: 1;
-}
 
-h1 {
-  font-size: 5rem;
-}
-
-footer {
-  text-align: right;
-  color: midnightblue;
-}
-
-.left{
-  float: left;
-}
-
-.right{
-  float: right;
-}
-
-.tile-image{
+.tile-image {
   width: 300px;
   height: 200px;
-  float: left;
   padding: 10px;
 }
 
-.gird-coontrainer{
+span{color: midnightblue;}
+
+footer {
+  clear: both;
+  text-align: end;
+}
+
+.gird-coontrainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 200px 200px;
-  gap:30px;
+  gap: 30px;
 }
 
-.card{
-grid-column: span 1;
+@media (min-width: 1280px) {
+  .main {
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  footer {
+    text-align: right;
+    color: midnightblue;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .tile-image {
+    float: left;
+  }
+
+  .card {
+    grid-column: span 1;
+  }
 }
 
-footer{
-  clear: both;
+@media (min-width: 601px) and (max-width: 1280px) {
+  .card {
+    width: fit-content;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  div{text-align: center;} 
+
+  body{
+    text-align: center;
+  }
 }
 
-h1{
-  grid-column: span 2;
-  clear: both;
+@media  (max-width: 794px) {
+
+  body{
+    text-align: center;
+  }
+
+  .gird-coontrainer {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  50% 100%;
+    gap: 30px;
+    overflow: auto;
+  }
+
+  .tile-image{
+    width: 100%;
+    clear: both;
+  }
+
+
+  .card{
+    clear: both;
+  }
 }
+
