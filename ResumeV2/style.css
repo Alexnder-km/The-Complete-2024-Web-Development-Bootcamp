@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.box {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 45%;
+}
+
+.imgdes{
+    width:100%;
+    padding-top: 10px;  
+    padding-bottom: 10px;  
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding: 5vh;
+  background: linear-gradient(-80deg, #00a835, #c5e300, #07c500, #5bff55);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+#header {
+  border-style: inset;
+  border-width: 5px;
+  padding: 2%;
+  color: blanchedalmond;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: "Kay Pho Du", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bgknowledge{
+    background-color:#5bff55;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
