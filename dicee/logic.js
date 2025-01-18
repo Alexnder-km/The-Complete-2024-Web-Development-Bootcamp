@@ -5,9 +5,6 @@ var player2 = document.querySelector("body > div > div:nth-child(3) > img");
 var play1number = Math.floor(Math.random() * 6) + 1;
 var play2number = Math.floor(Math.random() * 6) + 1;
 
-player1.src = "./images/dice1.png";
-player2.src = "./images/dice2.png";
-
 if (play1number === play2number) {
   header.innerHTML = "Draw";
   imgchange(play1number, play2number);
