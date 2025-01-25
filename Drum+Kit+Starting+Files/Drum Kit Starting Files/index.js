@@ -6,6 +6,7 @@ const buttons = document.querySelectorAll(".drum");
 
 document.addEventListener("keydown", function (event) {
   MakeSound(event.key);
+  buttonAnimation(event.key);
 });
 
 for (var i = 0; i < NumOfButtons; i++) {
@@ -26,7 +27,8 @@ for (var i = 0; i < NumOfButtons; i++) {
     //   audiol.play();
     // }
     // var buttonInnerHtml = this.innerText;
-    MakeSound(this.innerText);
+    MakeSound(this.innerText); 
+    buttonAnimation(this.innerText);
   });
 }
 
@@ -57,6 +59,16 @@ function MakeSound(Key) {
     default:
       console.log();
   }
+}
+
+function buttonAnimation(currentKey){
+  var activeButton =document.querySelector("."+currentKey)
+
+  activeButton.classList.add("pressed");
+  
+  setTimeout(function(){
+    activeButton.classList.remove("pressed");
+  },100);
 }
 
 var audiow = new Audio("sounds/tom-1.mp3");
